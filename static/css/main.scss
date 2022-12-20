@@ -135,6 +135,24 @@ footer {
 	.title {
 		margin-bottom: 0;
 	}
+	.mb-username {
+		font-family: "Raleway", sans-serif;
+		font-weight: 600;
+		text-align: center;
+		@media screen and (max-width: $breakpoint-mobile) {
+			text-align: left;
+		}
+		a {
+			text-decoration: none;
+			color: $link-hover;
+			&:hover {
+				color: $link;
+			}
+		}
+	}
+	.mb-about {
+		line-height: 1.5rem;
+	}
 }
 
 /* Post Styles ------- */
@@ -160,7 +178,7 @@ footer {
 		margin-right: auto;
 	}
 	p {
-		font-family: Georgia, serif;
+		//font-family: Georgia, serif;
 		line-height: 1.5rem;
 	}
 	a {

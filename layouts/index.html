@@ -7,8 +7,8 @@
             <img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }}">
             <div class="id">
                 <!--<h3 class="title">{{ .Site.Title }}</h3>-->
-                <p><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></p>
-                <p>{{ .About }}</p>
+                <h3 class="mb-username"><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></h3>
+                <p class="mb-about">{{ .Site.Params.itunes_description }}</p>
             </div>
         </div>
     </div>
