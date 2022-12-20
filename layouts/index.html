@@ -6,8 +6,9 @@
         <div class="profile">
             <img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }}">
             <div class="id">
-                <h3 class="title">{{ .Site.Title }}</h3>
+                <!--<h3 class="title">{{ .Site.Title }}</h3>-->
                 <p><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></p>
+                <p>{{ .About }}</p>
             </div>
         </div>
     </div>
