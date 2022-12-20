@@ -517,10 +517,12 @@ input#input_search.field {
 }
 
 /* Bookshelf ------- */
-img.bookshelf-book-cover {
+.bookshelf-book-cover {
+	img {
 	max-width: 150px;
 	min-width:  150px;
   }
+}
 
 /* Photos Grid ------- */
 .photos-grid {
