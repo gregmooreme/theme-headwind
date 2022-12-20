@@ -456,11 +456,16 @@ nav {
 		display: grid;
 		order: 2;
 		grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
-		box-shadow: inset 0 2px 0 #0085ef;
-		transition: color .3s ease-in-out, box-shadow .3s ease-in-out; 
+		background: $link-hover;
+		border-radius: 3px;
+		padding: 8px 20px;
+		color: white;
+		transition: background 0.3s ease;
+		text-decoration: none;
 		&:hover {
-		color: #ffffff;
-		box-shadow: inset 0 60px 0 #0085ef;
+			background: $bg-light;
+			color: $link;
+			transition: background 0.3s ease;
 		}
 	}
 	img { 
