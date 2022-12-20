@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="article-wrapper">
+    <article class="h-entry post">
+    {{ if .Title }}
+        <header>
+        <h1 class="p-name">{{ .Title }}</h1>
+        </header>
+    {{ end }}
+    <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+    <hr>
+    <section class="e-content post-body">
+        {{ .Content }}
+    </section>
+    </article>
+    <div class="replies">
+        {{ if .Site.Params.include_conversation }}
+        <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+        {{ end }}
+     </div>
+</div>
+<!--<section id="post-meta" class="clearfix">
+  <div class="profile">
+    <a href="/">
+      <img class="u-photo avatar" src="{{ .Site.Author.avatar }}" width="96" height="96">
+    </a>
+    <div class="id">
+      <p>
+      <span class="p-author h-card dark">{{ .Site.Author.name }}</span>
+      <span><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></span>
+      </p>
+    </div>
+  </div>
+</section>-->
+{{ end }}

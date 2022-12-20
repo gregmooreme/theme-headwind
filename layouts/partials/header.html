@@ -1,0 +1,19 @@
+<header>
+	<nav>
+		<a href="/">
+			<h1 class="logo">{{ .Site.Title }}</h1>
+		</a>
+		<input type="checkbox" id="nav" class="hidden" />
+		<label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+		<div class="nav-container">
+			<ul>
+				{{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
+                <li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
+                    {{ else }}
+                <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+                    {{ end }}
+				{{ end }}
+			</ul>
+		</div>
+	</nav>
+</header>

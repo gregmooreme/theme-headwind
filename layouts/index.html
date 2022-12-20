@@ -1,0 +1,66 @@
+{{ define "main" }}
+<main> 
+<div class="columns">
+    
+    <div class="co1">
+        <div class="profile">
+            <img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }}">
+            <div class="id">
+                <h3 class="title">{{ .Site.Title }}</h3>
+                <p><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col2">
+        <div class="home h-feed">
+            <div class="post-list">
+                {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 5) }}
+                {{ range $paginator.Pages  }}
+                <div class="post h-entry post-list-item">
+                    {{ if .Title }}
+                        <h2><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h2>
+                    {{ end }}
+
+                    <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+                    <hr>
+                    <div class="post-list-item-content">
+                        {{ .Content }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <div class="post-nav">
+                {{ if $paginator.HasPrev }}
+                    <span class="prev">
+                        <a href="{{ $paginator.Prev.URL }}" title="Previous Page">
+                            <span class="arrow">←</span> newer
+                        </a>
+                    </span>
+                {{ end }}
+                {{ if $paginator.HasNext }}
+                    <span class="next">
+                        <a href="{{ $paginator.Next.URL }}">
+                            older <span class="arrow">→</span>
+                        </a>
+                    </span>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <div class="col3">
+       <div class="categories">
+            <h3>Categories</h3>
+            {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+            {{ if gt (len $list) 0 }}
+                    {{ range $list }}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+            {{ end }}
+        </div>
+    </div>
+
+</div>
+</main>
+{{ end }}

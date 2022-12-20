@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="article-wrapper">
+
+    <h1 class="page-title">Archive</h1>
+    <div class="archive-wrapper">
+        <h2>Categories</h2>
+        {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+        {{ if gt (len $list) 0 }}
+            <div class="archive_categories" style="border-bottom: 1px solid lightgray; padding-bottom: 15px; margin-bottom: 30px;">
+                {{ range $list }}
+                    <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                {{ end }}
+            </div>
+        {{ end }}
+	</div>
+
+    <div class="archive-wrapper">
+        {{ $list := (where .Site.Pages "Type" "post") }}
+        <h2>Posts</h2>
+        <p style="color:#666;"><em>Posts with photos are marked with a 📷.</em></p>
+        {{ range $list }}
+            <p class="h-entry">
+                <a class="archive-date" href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "2006-01-02" }}</span></a> |
+                {{ if .Title }}
+				<a href="{{ .Permalink }}" class="u-url"><span class="p-name"><b>{{ .Title }}</b></span></a>
+			    {{ else }}
+                <span class="p-summary">
+                    {{ if isset .Params "photos" }}📷 {{ .Summary | truncate 80 }}</span>
+                    {{ else }}
+                    {{ .Summary | truncate 80 }}</span>
+                    {{ end }}
+                    {{ end }}
+            </p>
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}

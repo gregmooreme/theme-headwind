@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="article-wrapper">
+  <article class="h-entry post">
+    {{ if .Title }}
+      <header>
+        <h1 class="p-name">{{ .Title }}</h1>
+      </header>
+    {{ end }}
+    <section class="e-content post-body">
+        {{ .Content }}
+    </section>
+  </article>
+</div>
+<!--<section id="post-meta" class="clearfix">
+  <div class="profile">
+    <img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }}">
+    <div class="id">
+        <h3 class="title">{{ .Site.Title }}</h3>
+        <p><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></p>
+    </div>
+  </div>
+</section>-->
+{{ end }}
