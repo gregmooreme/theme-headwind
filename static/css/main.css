@@ -499,6 +499,10 @@ nav ul li a:hover {
 }
 
 /* Music - Album Whale feed ------- */
+.music .rss-title {
+  display: none;
+}
+
 .music a {
   order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
@@ -544,10 +548,6 @@ nav ul li a:hover {
 }
 
 .music .rss-box-music ul .rss-item h2, .music .rss-box-music ul .rss-item h3 {
-  display: none;
-}
-
-.music .rss-box-music ul .rss-item .rss-title {
   display: none;
 }
 

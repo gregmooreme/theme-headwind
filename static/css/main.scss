@@ -449,6 +449,7 @@ nav {
 
 /* Music - Album Whale feed ------- */
 .music {
+	.rss-title { display: none; }
 	a {
 		order: 2;
 		grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
@@ -486,7 +487,6 @@ nav {
 			display: grid;
 		
 			h2, h3 { display: none; }
-			.rss-title { display: none; }
 		}
 	}
 }
