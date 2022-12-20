@@ -452,22 +452,7 @@ nav {
 	ul { 
 		padding-left: 0 !important;
 		text-align: center; }
-	a {
-		display: grid;
-		order: 2;
-		grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
-		background: $link-hover;
-		border-radius: 3px;
-		padding: 8px 20px;
-		color: white;
-		transition: background 0.3s ease !important;
-		text-decoration: none;
-		&:hover {
-			background: $bg-light;
-			color: $link;
-			transition: background 0.3s ease !important;
-		}
-	}
+	
 	img { 
 		padding-top: 0;
 		padding-bottom: 4px;
@@ -477,7 +462,25 @@ nav {
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 		}
-	.rss-item { display: grid; }
+	.rss-item { 
+		display: grid;
+		a {
+			display: grid;
+			order: 2;
+			grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
+			background: $link-hover;
+			border-radius: 3px;
+			padding: 8px 20px;
+			color: white;
+			transition: background 0.3s ease !important;
+			text-decoration: none;
+			&:hover {
+				background: $bg-light;
+				color: $link;
+				transition: background 0.3s ease !important;
+			}
+		}
+	}
 	.rss-title { display: none; }
 	.rss-item h2, h3 { display: none; }
 }

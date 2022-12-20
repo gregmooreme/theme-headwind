@@ -504,24 +504,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.music a {
-  display: grid;
-  order: 2;
-  grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
-  background: dodgerblue;
-  border-radius: 3px;
-  padding: 8px 20px;
-  color: white;
-  transition: background 0.3s ease !important;
-  text-decoration: none;
-}
-
-.music a:hover {
-  background: #efefef;
-  color: #1f2227;
-  transition: background 0.3s ease !important;
-}
-
 .music img {
   padding-top: 0;
   padding-bottom: 4px;
@@ -536,6 +518,24 @@ nav ul li a:hover {
 
 .music .rss-item {
   display: grid;
+}
+
+.music .rss-item a {
+  display: grid;
+  order: 2;
+  grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
+  background: dodgerblue;
+  border-radius: 3px;
+  padding: 8px 20px;
+  color: white;
+  transition: background 0.3s ease !important;
+  text-decoration: none;
+}
+
+.music .rss-item a:hover {
+  background: #efefef;
+  color: #1f2227;
+  transition: background 0.3s ease !important;
 }
 
 .music .rss-title {
