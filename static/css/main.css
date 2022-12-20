@@ -550,3 +550,9 @@ input#input_search.field {
     width: 350px !important;
   }
 }
+
+/* Bookshelf ------- */
+img.bookshelf-book-cover {
+  max-width: 150px;
+  min-width: 150px;
+}
