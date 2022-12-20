@@ -588,3 +588,12 @@ img.bookshelf-book-cover {
   max-width: 150px;
   min-width: 150px;
 }
+
+/* Photos Grid ------- */
+.photos-grid {
+  max-width: 12000px;
+}
+
+.photos-grid img {
+  border-radius: 5px;
+}
