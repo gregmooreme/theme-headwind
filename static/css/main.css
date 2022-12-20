@@ -153,7 +153,6 @@ footer #rss a:hover {
 }
 
 .post {
-  min-width: 560px;
   padding: 0.5rem;
   margin: 0.5rem 0;
   background-color: #fff;
@@ -499,6 +498,10 @@ nav ul li a:hover {
 }
 
 /* Music - Album Whale feed ------- */
+.music {
+  max-width: 12000px;
+}
+
 .music .rss-title {
   display: none;
 }

@@ -143,7 +143,6 @@ footer {
 	justify-content: center;
 }
 .post {
-	min-width: $breakpoint-mobile;
 	padding: 0.5rem;
 	margin: 0.5rem 0;
 	background-color: #fff;
@@ -449,6 +448,7 @@ nav {
 
 /* Music - Album Whale feed ------- */
 .music {
+	max-width: $breakpoint-desktop;
 	.rss-title { display: none; }
 	img { 
 		width: 100%;
