@@ -521,13 +521,13 @@ nav ul li a:hover {
 }
 
 .music .rss-item a {
-  display: grid;
   order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
   background: dodgerblue;
   border-radius: 3px;
   padding: 8px 20px;
   color: white;
+  box-shadow: none;
   transition: background 0.3s ease !important;
   text-decoration: none;
 }
