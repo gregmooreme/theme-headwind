@@ -450,6 +450,13 @@ nav {
 /* Music - Album Whale feed ------- */
 .music {
 	.rss-title { display: none; }
+	img { 
+		width: 100%;
+		height: auto;
+		padding-top: 0;
+		padding-bottom: 4px;
+		order: 1;
+	}
 	a {
 		order: 2;
 		grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
@@ -472,17 +479,7 @@ nav {
 		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 		padding-left: 0 !important;
 		text-align: center;
-		@media screen and (var($breakpoint-mobile)) {
-			grid-template-rows: repeat(auto-fit, minmax(11rem, 1fr));
-		}
 
-		img { 
-			width: 100%;
-			height: auto;
-			padding-top: 0;
-			padding-bottom: 4px;
-			order: 1;
-		}
 		.rss-item { 
 			display: grid;
 		

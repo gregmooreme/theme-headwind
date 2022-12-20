@@ -503,6 +503,14 @@ nav ul li a:hover {
   display: none;
 }
 
+.music img {
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 4px;
+  order: 1;
+}
+
 .music a {
   order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
@@ -527,20 +535,6 @@ nav ul li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   padding-left: 0 !important;
   text-align: center;
-}
-
-@media screen and (var(560px)) {
-  .music .rss-box-music ul {
-    grid-template-rows: repeat(auto-fit, minmax(11rem, 1fr));
-  }
-}
-
-.music .rss-box-music ul img {
-  width: 100%;
-  height: auto;
-  padding-top: 0;
-  padding-bottom: 4px;
-  order: 1;
 }
 
 .music .rss-box-music ul .rss-item {
