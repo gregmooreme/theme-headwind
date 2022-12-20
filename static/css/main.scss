@@ -464,26 +464,25 @@ nav {
 	}
 	.rss-item { 
 		display: grid;
-	}
+		grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
+	
 		a {
 			order: 2;
-			grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
-			background: $link-hover;
+			background: $bg-light;
 			border-radius: 3px;
-			padding: 8px 20px;
+			padding: 4px 10px;
 			color: white;
-			box-shadow: none;
 			transition: background 0.3s ease !important;
 			text-decoration: none;
 			&:hover {
-				background: $bg-light;
-				color: $link;
+				background: $link-hover;
+				color: white;
 				transition: background 0.3s ease !important;
 			}
 		}
-
+		h2, h3 { display: none; }
+	}
 	.rss-title { display: none; }
-	.rss-item h2, h3 { display: none; }
 }
 
 /* Search field width fix ------- */

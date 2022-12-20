@@ -515,31 +515,30 @@ nav ul li a:hover {
 
 .music .rss-item {
   display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
 }
 
-.music a {
+.music .rss-item a {
   order: 2;
-  grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
-  background: dodgerblue;
+  background: #efefef;
   border-radius: 3px;
-  padding: 8px 20px;
+  padding: 4px 10px;
   color: white;
-  box-shadow: none;
   transition: background 0.3s ease !important;
   text-decoration: none;
 }
 
-.music a:hover {
-  background: #efefef;
-  color: #1f2227;
+.music .rss-item a:hover {
+  background: dodgerblue;
+  color: white;
   transition: background 0.3s ease !important;
 }
 
-.music .rss-title {
+.music .rss-item h2, .music .rss-item h3 {
   display: none;
 }
 
-.music .rss-item h2, .music h3 {
+.music .rss-title {
   display: none;
 }
 
