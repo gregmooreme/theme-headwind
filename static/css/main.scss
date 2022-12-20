@@ -375,7 +375,7 @@ nav {
 		display: grid;
 		justify-content: center;
 		gap: 2em;
-		transform: translateY(50%);
+		transform: translateY(10%);
 		li {
 			font-weight: 800;
 			a {
@@ -473,11 +473,13 @@ nav {
 			padding: 4px 10px;
 			color: white;
 			transition: background 0.3s ease !important;
+			box-shadow: none !important;
 			text-decoration: none;
 			&:hover {
 				background: $link-hover;
 				color: white;
 				transition: background 0.3s ease !important;
+				box-shadow: none !important;
 			}
 		}
 		h2, h3 { display: none; }

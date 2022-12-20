@@ -418,7 +418,7 @@ nav ul li a:hover {
     display: grid;
     justify-content: center;
     gap: 2em;
-    transform: translateY(50%);
+    transform: translateY(10%);
   }
   .nav-container ul li {
     font-weight: 800;
@@ -525,6 +525,7 @@ nav ul li a:hover {
   padding: 4px 10px;
   color: white;
   transition: background 0.3s ease !important;
+  box-shadow: none !important;
   text-decoration: none;
 }
 
@@ -532,6 +533,7 @@ nav ul li a:hover {
   background: dodgerblue;
   color: white;
   transition: background 0.3s ease !important;
+  box-shadow: none !important;
 }
 
 .music .rss-item h2, .music .rss-item h3 {
