@@ -459,36 +459,37 @@ nav {
 		@media screen and (var($breakpoint-mobile)) {
 			grid-template-rows: repeat(auto-fit, minmax(11rem, 1fr));
 		}
-	}
-	img { 
-		width: 100%;
-		height: auto;
-		padding-top: 0;
-		padding-bottom: 4px;
-		order: 1;
-	}
-	.rss-item { 
-		display: grid;
-	
-		a {
-			order: 2;
-			grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
-			border-radius: 3px;
-			padding: 4px 10px;
-			color: $link;
-			transition: background 0.3s ease !important;
-			box-shadow: none !important;
-			text-decoration: none;
-			&:hover {
-				background: $link-hover;
-				color: white;
+
+		img { 
+			width: 100%;
+			height: auto;
+			padding-top: 0;
+			padding-bottom: 4px;
+			order: 1;
+		}
+		.rss-item { 
+			display: grid;
+		
+			a {
+				order: 2;
+				grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
+				border-radius: 3px;
+				padding: 4px 10px;
+				color: $link;
 				transition: background 0.3s ease !important;
 				box-shadow: none !important;
+				text-decoration: none;
+				&:hover {
+					background: $link-hover;
+					color: white;
+					transition: background 0.3s ease !important;
+					box-shadow: none !important;
+				}
 			}
+			h2, h3 { display: none; }
 		}
-		h2, h3 { display: none; }
+		.rss-title { display: none; }
 	}
-	.rss-title { display: none; }
 }
 
 /* Search field width fix ------- */

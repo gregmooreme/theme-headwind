@@ -513,7 +513,7 @@ nav ul li a:hover {
   }
 }
 
-.music img {
+.music .rss-box-music ul img {
   width: 100%;
   height: auto;
   padding-top: 0;
@@ -521,11 +521,11 @@ nav ul li a:hover {
   order: 1;
 }
 
-.music .rss-item {
+.music .rss-box-music ul .rss-item {
   display: grid;
 }
 
-.music .rss-item a {
+.music .rss-box-music ul .rss-item a {
   order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
   border-radius: 3px;
@@ -536,18 +536,18 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-.music .rss-item a:hover {
+.music .rss-box-music ul .rss-item a:hover {
   background: dodgerblue;
   color: white;
   transition: background 0.3s ease !important;
   box-shadow: none !important;
 }
 
-.music .rss-item h2, .music .rss-item h3 {
+.music .rss-box-music ul .rss-item h2, .music .rss-box-music ul .rss-item h3 {
   display: none;
 }
 
-.music .rss-title {
+.music .rss-box-music ul .rss-title {
   display: none;
 }
 
