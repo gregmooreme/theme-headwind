@@ -499,7 +499,10 @@ nav ul li a:hover {
 }
 
 /* Music - Album Whale feed ------- */
-.music ul {
+.music .rss-box-music ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   padding-left: 0 !important;
   text-align: center;
 }
@@ -510,17 +513,11 @@ nav ul li a:hover {
   order: 1;
 }
 
-.music .rss-box-music ul {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-}
-
 .music .rss-item {
   display: grid;
 }
 
-.music .rss-item a {
+.music a {
   order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
   background: dodgerblue;
@@ -532,7 +529,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-.music .rss-item a:hover {
+.music a:hover {
   background: #efefef;
   color: #1f2227;
   transition: background 0.3s ease !important;

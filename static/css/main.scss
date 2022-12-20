@@ -448,22 +448,23 @@ nav {
 }
 
 /* Music - Album Whale feed ------- */
-.music {
-	ul { 
-		padding-left: 0 !important;
-		text-align: center; }
-	
-	img { 
-		padding-top: 0;
-		padding-bottom: 4px;
-		order: 1; }
+.music {	
+
 	.rss-box-music ul {
 		display: grid;
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-		}
+		padding-left: 0 !important;
+		text-align: center;
+	}
+	img { 
+		padding-top: 0;
+		padding-bottom: 4px;
+		order: 1;
+	}
 	.rss-item { 
 		display: grid;
+	}
 		a {
 			order: 2;
 			grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
@@ -480,7 +481,7 @@ nav {
 				transition: background 0.3s ease !important;
 			}
 		}
-	}
+
 	.rss-title { display: none; }
 	.rss-item h2, h3 { display: none; }
 }
