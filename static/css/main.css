@@ -507,6 +507,12 @@ nav ul li a:hover {
   text-align: center;
 }
 
+@media screen and (var(560px)) {
+  .music .rss-box-music ul {
+    grid-template-rows: repeat(auto-fit, minmax(11rem, 1fr));
+  }
+}
+
 .music img {
   width: 100%;
   height: auto;

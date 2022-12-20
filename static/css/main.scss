@@ -448,7 +448,7 @@ nav {
 }
 
 /* Music - Album Whale feed ------- */
-.music {	
+.music {
 
 	.rss-box-music ul {
 		display: grid;
@@ -456,6 +456,9 @@ nav {
 		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 		padding-left: 0 !important;
 		text-align: center;
+		@media screen and (var($breakpoint-mobile)) {
+			grid-template-rows: repeat(auto-fit, minmax(11rem, 1fr));
+		}
 	}
 	img { 
 		width: 100%;
