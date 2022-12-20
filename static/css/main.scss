@@ -458,20 +458,21 @@ nav {
 		text-align: center;
 	}
 	img { 
+		width: 100%;
+		height: auto;
 		padding-top: 0;
 		padding-bottom: 4px;
 		order: 1;
 	}
 	.rss-item { 
 		display: grid;
-		grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
 	
 		a {
 			order: 2;
-			background: $bg-light;
+			grid-template-rows: repeat(auto-fit, minmax(4rem, 1fr));
 			border-radius: 3px;
 			padding: 4px 10px;
-			color: white;
+			color: $link;
 			transition: background 0.3s ease !important;
 			box-shadow: none !important;
 			text-decoration: none;
