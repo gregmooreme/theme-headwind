@@ -217,10 +217,13 @@ footer {
 	background: $bg-light;
 	border-radius: 0.5em;
 }
-.microblog_text, img {
+.microblog_text { 
+	p { margin: 0 0 10px; }
+	img {
 		max-width: 100%;
 		height: auto;
 	}
+}
 .microblog_time {
 	font-size: 0.7em;
 	padding-top: 10px;
