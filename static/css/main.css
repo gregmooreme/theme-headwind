@@ -223,6 +223,15 @@ footer #rss a:hover {
 }
 
 /* Replies/Comments ------- */
+.microblog_conversation {
+  max-width: 1200px;
+}
+
+.microblog_conversation img {
+  height: 100%;
+  width: auto;
+}
+
 .comment-header {
   border-top: 1px solid #eee;
 }
