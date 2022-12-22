@@ -235,6 +235,12 @@ footer #rss a:hover {
   margin: 1rem 0;
 }
 
+.microblog_conversation .microblog_avatar {
+  width: 20px;
+  aspect-ratio: 20 / 20;
+  height: 20px;
+}
+
 .comment-header {
   border-top: 1px solid #eee;
 }
