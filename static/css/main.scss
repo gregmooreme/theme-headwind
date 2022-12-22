@@ -207,8 +207,11 @@ footer {
 	max-width: 1200px;
 	
 	img {
-	height: 100%;
-	width: auto;
+		display: flex;
+		max-width: 100%;
+		height: auto;
+		border-radius: 0.3rem;
+		margin: 1rem 0;
 	}
 }
 .comment-header {
