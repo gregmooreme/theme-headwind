@@ -240,13 +240,10 @@ footer #rss a:hover {
   border-radius: 0.5em;
 }
 
-.microblog_text p {
-  margin: 0 0 10px;
-}
-
 .microblog_text img {
   max-width: 100%;
   height: auto;
+  margin: 0.5em 0;
 }
 
 .microblog_time {
