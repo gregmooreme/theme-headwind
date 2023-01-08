@@ -10,6 +10,11 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+	min-height: 100vh; /* Keep footer at the bottom when content is small */
+	> footer {
+		position: sticky;
+		top: 100vh;
+	  }
 
 	@media (prefers-color-scheme: dark) {
 		background-color: $winter-night-lt;
@@ -46,6 +51,7 @@ blockquote {
 		vertical-align: -0.5em;
 	}
 	@media (prefers-color-scheme: dark) {
+		background-color: $winter-day-dk;
 		color: $winter-night-dk;
 		border-left: 10px solid $frost-green;
 		&:before {
@@ -364,18 +370,28 @@ footer {
 .archive-wrapper {
 	max-width: $breakpoint-tablet;
 
-	p { line-height: 1.5em; }
+	p { 
+		line-height: 1.5em;
+		color: $winter-night-dk;
+		@media (prefers-color-scheme: dark) {
+			color: $winter-day-dk;
+		}
+	}
 	.u-url {
 		color: $link-hover;
 		&:hover { color: $link; }
 	}
 	.archive-date {
-		background: $winter-day-lt;
+		background-color: $winter-day-lt;
 		border-radius: 3px;
 		padding: 4px;
 		color: $link;
 		transition: background 0.3s ease;
 		text-decoration: none;
+		@media (prefers-color-scheme: dark) {
+			background-color: $winter-night-dk;
+			color: $winter-day-dk;
+		}
 			&:hover {
 				background: $link-hover;
 				color: white;
@@ -430,8 +446,14 @@ nav {
 		line-height: 2em;
 		margin: 0;
 		transition: all 0.3s ease;
+		@media (prefers-color-scheme: dark) {
+			color: $winter-day-dk;
+		}
 		&:hover {
 			color: $link;
+			@media (prefers-color-scheme: dark) {
+				color: $link-hover;
+			}
 		}
 		@media screen and (max-width: $breakpoint-mobile) {
 			line-height: 0.5em;

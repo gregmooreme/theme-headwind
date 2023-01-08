@@ -7,6 +7,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+  min-height: 100vh;
+  /* Keep footer at the bottom when content is small */
+}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +65,7 @@ blockquote:before {
 
 @media (prefers-color-scheme: dark) {
   blockquote {
+    background-color: #D8DEE9;
     color: #2E3440;
     border-left: 10px solid #8FBCBB;
   }
@@ -445,6 +453,13 @@ footer #rss a:hover {
 
 .archive-wrapper p {
   line-height: 1.5em;
+  color: #2E3440;
+}
+
+@media (prefers-color-scheme: dark) {
+  .archive-wrapper p {
+    color: #D8DEE9;
+  }
 }
 
 .archive-wrapper .u-url {
@@ -456,12 +471,19 @@ footer #rss a:hover {
 }
 
 .archive-wrapper .archive-date {
-  background: #ECEFF4;
+  background-color: #ECEFF4;
   border-radius: 3px;
   padding: 4px;
   color: #1f2227;
   transition: background 0.3s ease;
   text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .archive-wrapper .archive-date {
+    background-color: #2E3440;
+    color: #D8DEE9;
+  }
 }
 
 .archive-wrapper .archive-date:hover {
@@ -524,8 +546,20 @@ nav .logo {
   transition: all 0.3s ease;
 }
 
+@media (prefers-color-scheme: dark) {
+  nav .logo {
+    color: #D8DEE9;
+  }
+}
+
 nav .logo:hover {
   color: #1f2227;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav .logo:hover {
+    color: dodgerblue;
+  }
 }
 
 @media screen and (max-width: 560px) {
