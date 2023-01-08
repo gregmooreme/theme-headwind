@@ -281,6 +281,23 @@ footer {
 	font-size: 0.7em;
 	padding-top: 10px;
 }
+.conversation-on-mb {
+	background: $winter-day-lt;
+	border-radius: 3px;
+	padding: 8px 20px;
+	color: $link;
+	transition: background 0.3s ease;
+	text-decoration: none;
+	@media (prefers-color-scheme: dark) {
+		background-color: $winter-night-dk;
+		color: $winter-day-lt;
+	}
+	&:hover {
+		background: $link-hover;
+		color: white;
+		transition: background 0.3s ease;
+	}
+}
 
 /* Pagination Links ------- */
 .post-nav {

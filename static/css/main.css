@@ -344,6 +344,28 @@ footer #rss a:hover {
   padding-top: 10px;
 }
 
+.conversation-on-mb {
+  background: #ECEFF4;
+  border-radius: 3px;
+  padding: 8px 20px;
+  color: #1f2227;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .conversation-on-mb {
+    background-color: #2E3440;
+    color: #ECEFF4;
+  }
+}
+
+.conversation-on-mb:hover {
+  background: dodgerblue;
+  color: white;
+  transition: background 0.3s ease;
+}
+
 /* Pagination Links ------- */
 .post-nav {
   font-family: "Railway", sans-serif;
