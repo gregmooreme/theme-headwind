@@ -25,6 +25,10 @@ h5,
 h6 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
+	color: $winter-night-dk;
+	@media (prefers-color-scheme: dark) {
+		color: $winter-day-lt;
+	}
 }
 blockquote {
     background-color: $winter-day-md;
@@ -245,7 +249,6 @@ footer {
 	padding: 0.5em;
 	margin: 0.5em 0;
 	background: $winter-day-lt;
-	color: $winter-night-dk;
 	border-radius: 0.5em;
 	@media (prefers-color-scheme: dark) {
 		background-color: $winter-night-md;
