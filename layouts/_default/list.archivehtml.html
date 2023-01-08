@@ -17,7 +17,7 @@
     <div class="archive-wrapper">
         {{ $list := (where .Site.Pages "Type" "post") }}
         <h2>Posts</h2>
-        <p style="color:#666;"><em>Posts with photos are marked with a 📷.</em></p>
+        <p><em>Posts with photos are marked with a 📷.</em></p>
         {{ range $list }}
             <p class="h-entry">
                 <a class="archive-date" href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "2006-01-02" }}</span></a> |

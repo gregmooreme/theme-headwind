@@ -514,7 +514,7 @@ footer #rss a:hover {
   background: dodgerblue;
   border-radius: 3px;
   padding: 8px 20px;
-  color: white;
+  color: #ECEFF4;
   transition: background 0.3s ease;
   text-decoration: none;
 }
