@@ -245,6 +245,7 @@ footer {
 	padding: 0.5em;
 	margin: 0.5em 0;
 	background: $winter-day-lt;
+	color: $winter-night-dk;
 	border-radius: 0.5em;
 	@media (prefers-color-scheme: dark) {
 		background-color: $winter-night-md;
