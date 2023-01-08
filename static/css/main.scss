@@ -596,13 +596,16 @@ nav {
 		grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
 		border-radius: 3px;
 		padding: 4px 10px;
-		color: $link;
 		transition: background 0.3s ease !important;
 		box-shadow: none !important;
 		text-decoration: none;
+		color: $winter-night-dk;
+		@media (prefers-color-scheme: dark) {
+			color: $winter-day-dk;
+		}
 		&:hover {
 			background: $link-hover;
-			color: white;
+			color: $winter-day-lt;
 			transition: background 0.3s ease !important;
 			box-shadow: none !important;
 		}

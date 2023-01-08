@@ -736,15 +736,21 @@ nav ul li a:hover {
   grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
   border-radius: 3px;
   padding: 4px 10px;
-  color: #1f2227;
   transition: background 0.3s ease !important;
   box-shadow: none !important;
   text-decoration: none;
+  color: #2E3440;
+}
+
+@media (prefers-color-scheme: dark) {
+  .music a {
+    color: #D8DEE9;
+  }
 }
 
 .music a:hover {
   background: dodgerblue;
-  color: white;
+  color: #ECEFF4;
   transition: background 0.3s ease !important;
   box-shadow: none !important;
 }
