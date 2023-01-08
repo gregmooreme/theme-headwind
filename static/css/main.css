@@ -1,9 +1,19 @@
 @charset "UTF-8";
+/* Background Colors ------- */
+/* Accent Colors ------- */
+/* Colors ------- */
 /* Global Styles ------- */
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #4C566A;
+    color: #ECEFF4;
+  }
 }
 
 h1,
@@ -17,14 +27,14 @@ h6 {
 }
 
 blockquote {
-  background-color: #efefef;
-  border-left: 10px solid dodgerblue;
+  background-color: #E5E9F0;
+  border-left: 10px solid #5E81AC;
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
 
 blockquote:before {
-  color: var(--link-hover);
+  color: #81A1C1;
   content: "\201C";
   font-family: Georgia, serif;
   font-weight: bold;
@@ -34,16 +44,38 @@ blockquote:before {
   vertical-align: -0.5em;
 }
 
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    color: #2E3440;
+    border-left: 10px solid #8FBCBB;
+  }
+  blockquote:before {
+    color: #88C0D0;
+  }
+}
+
 hr {
   border: 0;
   height: 1px;
-  background-color: #efefef;
+  background-color: #D8DEE9;
+}
+
+@media (prefers-color-scheme: dark) {
+  hr {
+    background-color: #2E3440;
+  }
 }
 
 header {
-  background: #efefef;
+  background: #E5E9F0;
   border-bottom: 6px solid dodgerblue;
   padding: 2em;
+}
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #2E3440;
+  }
 }
 
 main {
@@ -66,9 +98,15 @@ article {
 footer {
   display: flex;
   justify-content: center;
-  background: #efefef;
+  background: #E5E9F0;
   border-top: 3px solid dodgerblue;
   padding: 0 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    background-color: #2E3440;
+  }
 }
 
 footer img {
@@ -163,8 +201,20 @@ footer #rss a:hover {
   color: dodgerblue;
 }
 
+@media (prefers-color-scheme: dark) {
+  .profile .mb-username a {
+    color: #88C0D0;
+  }
+}
+
 .profile .mb-username a:hover {
   color: #1f2227;
+}
+
+@media (prefers-color-scheme: dark) {
+  .profile .mb-username a:hover {
+    color: #81A1C1;
+  }
 }
 
 .profile .mb-about {
@@ -181,9 +231,17 @@ footer #rss a:hover {
   padding: 0.5em;
   margin: 0.5em 0;
   background-color: #fff;
-  border: 1px solid #efefef;
+  border: 1px solid #ECEFF4;
   border-radius: 0.5em;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post {
+    background-color: #434C5E;
+    color: #ECEFF4;
+    border: 1px solid #2E3440;
+  }
 }
 
 .post img {
@@ -236,8 +294,19 @@ footer #rss a:hover {
   max-width: 760px;
   padding: 0.5em;
   margin: 0.5em 0;
-  background: #efefef;
+  background: #ECEFF4;
   border-radius: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .microblog_post {
+    background-color: #434C5E;
+    color: #ECEFF4;
+  }
+}
+
+.microblog_post a {
+  color: dodgerblue;
 }
 
 .microblog_text img {
@@ -268,7 +337,7 @@ footer #rss a:hover {
 
 .post-nav a {
   display: flex;
-  background: #efefef;
+  background: #ECEFF4;
   border-radius: 3px;
   padding: 4px 10px;
   color: #1f2227;
@@ -295,13 +364,26 @@ footer #rss a:hover {
   color: #999;
 }
 
+@media (prefers-color-scheme: dark) {
+  .categories h3 {
+    color: #E5E9F0;
+  }
+}
+
 .categories a {
-  background: #efefef;
+  background: #ECEFF4;
   border-radius: 3px;
   padding: 8px 20px;
   color: #1f2227;
   transition: background 0.3s ease;
   text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .categories a {
+    background-color: #2E3440;
+    color: #ECEFF4;
+  }
 }
 
 .categories a:hover {
@@ -328,7 +410,7 @@ footer #rss a:hover {
 }
 
 .archive-wrapper .archive-date {
-  background: #efefef;
+  background: #ECEFF4;
   border-radius: 3px;
   padding: 4px;
   color: #1f2227;
@@ -370,7 +452,7 @@ footer #rss a:hover {
 }
 
 .archive_categories a:hover {
-  background: #efefef;
+  background: #ECEFF4;
   color: #1f2227;
   transition: background 0.3s ease;
 }
@@ -427,6 +509,12 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 
+@media (prefers-color-scheme: dark) {
+  nav ul li a {
+    color: #88C0D0;
+  }
+}
+
 nav ul li a:hover {
   color: dodgerblue;
   text-decoration: none;
@@ -440,7 +528,7 @@ nav ul li a:hover {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: #1f2227;
+    background: #2E3440;
     opacity: 0;
     transition: all 0.3s ease;
   }
@@ -470,16 +558,34 @@ nav ul li a:hover {
     cursor: pointer;
     z-index: 9999;
     border-radius: 50%;
-    background: #efefef;
+    background-color: #E5E9F0;
   }
+}
+
+@media screen and (max-width: 560px) and (prefers-color-scheme: dark) {
+  .nav-open {
+    background-color: #2E3440;
+  }
+}
+
+@media screen and (max-width: 560px) {
   .nav-open i {
     display: block;
     width: 20px;
     height: 2px;
-    background: #1f2227;
+    background: #2E3440;
     border-radius: 2px;
     margin-left: 14px;
   }
+}
+
+@media screen and (max-width: 560px) and (prefers-color-scheme: dark) {
+  .nav-open i {
+    background: #ECEFF4;
+  }
+}
+
+@media screen and (max-width: 560px) {
   .nav-open i:nth-child(1) {
     margin-top: 16px;
   }
@@ -493,7 +599,7 @@ nav ul li a:hover {
 }
 
 #nav:checked + .nav-open {
-  background: #1f2227;
+  background: #2E3440;
   transform: rotate(45deg);
 }
 
