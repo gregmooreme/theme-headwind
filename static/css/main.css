@@ -729,8 +729,7 @@ nav ul li a:hover {
 }
 
 .music img {
-  width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
   padding-top: 0;
   padding-bottom: 4px;
   order: 1;

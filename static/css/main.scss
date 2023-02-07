@@ -589,8 +589,7 @@ nav {
 	max-width: $breakpoint-desktop;
 	.rss-title { display: none; }
 	img { 
-		width: 100%;
-		height: auto;
+		aspect-ratio: 1 / 1;
 		padding-top: 0;
 		padding-bottom: 4px;
 		order: 1;
