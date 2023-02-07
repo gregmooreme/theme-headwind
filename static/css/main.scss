@@ -3,13 +3,15 @@ $breakpoint-tablet: 760px;
 $breakpoint-desktop: 12000px;
 
 @import 'partials/_colors.scss';
-
+@import url(https://fonts.bunny.net/css?family=fraunces:300,400,600,800|rock-salt:400);
 
 /* Global Styles ------- */
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+	font-family: 'Fraunces', Georgia, 'Times New Roman', Times, serif;
+	font-weight: 300;
+	//font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	min-height: 100vh; /* Keep footer at the bottom when content is small */
 	> footer {
 		position: sticky;
@@ -19,6 +21,7 @@ body {
 	@media (prefers-color-scheme: dark) {
 		background-color: $winter-night-lt;
 		color: $winter-day-lt;
+		font-weight: 400;
 	}
 }
 
@@ -28,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Raleway", sans-serif;
+	font-family: "Fraunces", serif;
 	font-weight: 800;
 	color: $winter-night-dk;
 	@media (prefers-color-scheme: dark) {
@@ -36,6 +39,7 @@ h6 {
 	}
 }
 blockquote {
+	font-family: "Fraunces", serif;
     background-color: $winter-day-md;
     border-left: 10px solid $frost-ocean;
     padding: 0.5em 10px;
@@ -165,7 +169,6 @@ footer {
 		margin-bottom: 0;
 	}
 	.mb-username {
-		font-family: "Raleway", sans-serif;
 		font-weight: 600;
 		text-align: center;
 		@media screen and (max-width: $breakpoint-mobile) {
@@ -194,6 +197,9 @@ footer {
 #post-meta {
 	display: grid;
 	justify-content: center;
+}
+.dt-published {
+	font-weight: 600;
 }
 .post {
 	padding: 0.5em;
@@ -307,7 +313,7 @@ footer {
 
 /* Pagination Links ------- */
 .post-nav {
-    font-family: "Railway", sans-serif;
+	font-family: "Railway", sans-serif;
     font-weight: 600;
     font-variant: small-caps;
 
@@ -440,8 +446,7 @@ nav {
 	}
 	.logo {
 		color: $link-hover;
-		font-family: "Rock Salt", "Raleway", sans-serif;
-		font-weight: 600;
+		font-family: "Rock Salt", handwriting;
 		font-size: 1.5em;
 		line-height: 2em;
 		margin: 0;
@@ -465,7 +470,6 @@ nav {
 		gap: 1.5em;
 		li {
 			display: flex;
-			font-family: "Raleway", sans-serif;
 			font-weight: 600;
 			a {
 				outline: none;

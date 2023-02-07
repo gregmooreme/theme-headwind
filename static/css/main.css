@@ -2,11 +2,13 @@
 /* Background Colors ------- */
 /* Accent Colors ------- */
 /* Colors ------- */
+@import url(https://fonts.bunny.net/css?family=fraunces:300,400,600,800|rock-salt:400);
 /* Global Styles ------- */
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+  font-family: 'Fraunces', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
   min-height: 100vh;
   /* Keep footer at the bottom when content is small */
 }
@@ -20,6 +22,7 @@ body > footer {
   body {
     background-color: #4C566A;
     color: #ECEFF4;
+    font-weight: 400;
   }
 }
 
@@ -29,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Fraunces", serif;
   font-weight: 800;
   color: #2E3440;
 }
@@ -46,6 +49,7 @@ h6 {
 }
 
 blockquote {
+  font-family: "Fraunces", serif;
   background-color: #E5E9F0;
   border-left: 10px solid #5E81AC;
   padding: 0.5em 10px;
@@ -205,7 +209,6 @@ footer #rss a:hover {
 }
 
 .profile .mb-username {
-  font-family: "Raleway", sans-serif;
   font-weight: 600;
   text-align: center;
 }
@@ -245,6 +248,10 @@ footer #rss a:hover {
 #post-meta {
   display: grid;
   justify-content: center;
+}
+
+.dt-published {
+  font-weight: 600;
 }
 
 .post {
@@ -538,8 +545,7 @@ nav a {
 
 nav .logo {
   color: dodgerblue;
-  font-family: "Rock Salt", "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Rock Salt", handwriting;
   font-size: 1.5em;
   line-height: 2em;
   margin: 0;
@@ -576,7 +582,6 @@ nav ul {
 
 nav ul li {
   display: flex;
-  font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
