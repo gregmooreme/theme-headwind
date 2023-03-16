@@ -743,6 +743,7 @@ nav ul li a:hover {
   transition: background 0.3s ease !important;
   box-shadow: none !important;
   text-decoration: none;
+  font-weight: 600;
   color: #2E3440;
 }
 
@@ -757,6 +758,11 @@ nav ul li a:hover {
   color: #ECEFF4;
   transition: background 0.3s ease !important;
   box-shadow: none !important;
+}
+
+.music p {
+  order: 3;
+  line-height: 1.2em;
 }
 
 .music .rss-box-music ul {

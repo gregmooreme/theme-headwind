@@ -602,6 +602,7 @@ nav {
 		transition: background 0.3s ease !important;
 		box-shadow: none !important;
 		text-decoration: none;
+		font-weight: 600;
 		color: $winter-night-dk;
 		@media (prefers-color-scheme: dark) {
 			color: $winter-day-dk;
@@ -612,6 +613,10 @@ nav {
 			transition: background 0.3s ease !important;
 			box-shadow: none !important;
 		}
+	}
+	p {
+		order: 3;
+		line-height: 1.2em;
 	}
 	.rss-box-music ul {
 		display: grid;
