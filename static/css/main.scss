@@ -599,6 +599,7 @@ nav {
 		grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
 		padding: 2px;
 		transition: color 0.3s ease !important;
+		box-shadow: none !important;
 		text-decoration: none;
 		font-weight: 600;
 		color: $winter-night-dk;
@@ -608,6 +609,7 @@ nav {
 		&:hover {
 			color: $link-hover;
 			transition: color 0.3s ease !important;
+			box-shadow: none !important;
 		}
 	}
 	/*a {
