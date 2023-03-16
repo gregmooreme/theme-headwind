@@ -797,6 +797,8 @@ nav ul li a:hover {
 
 .music .rss-box-music li {
   display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
 }
 
 /* Search field width fix ------- */

@@ -644,13 +644,13 @@ nav {
 		place-items: center;
 
 		.rss-item { 
-			//display: grid;
-		
 			h2, h3 { display: none; }
 		}
 	}
 	.rss-box-music li {
 		display: flex;
+		flex-direction: column;
+		margin-bottom: auto;
 	}
 }
 
