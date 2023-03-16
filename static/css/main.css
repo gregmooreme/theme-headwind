@@ -722,6 +722,26 @@ nav ul li a:hover {
 /* Music - Album Whale feed ------- */
 .music {
   max-width: 12000px;
+  /*a {
+		order: 2;
+		grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
+		border-radius: 3px;
+		padding: 4px 10px;
+		transition: background 0.3s ease !important;
+		box-shadow: none !important;
+		text-decoration: none;
+		font-weight: 600;
+		color: $winter-night-dk;
+		@media (prefers-color-scheme: dark) {
+			color: $winter-day-dk;
+		}
+		&:hover {
+			background: $link-hover;
+			color: $winter-day-lt;
+			transition: background 0.3s ease !important;
+			box-shadow: none !important;
+		}
+	}*/
 }
 
 .music .rss-title {
@@ -738,10 +758,8 @@ nav ul li a:hover {
 .music a {
   order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
-  border-radius: 3px;
-  padding: 4px 10px;
-  transition: background 0.3s ease !important;
-  box-shadow: none !important;
+  padding: 2px;
+  transition: color 0.3s ease !important;
   text-decoration: none;
   font-weight: 600;
   color: #2E3440;
@@ -754,10 +772,8 @@ nav ul li a:hover {
 }
 
 .music a:hover {
-  background: dodgerblue;
-  color: #ECEFF4;
-  transition: background 0.3s ease !important;
-  box-shadow: none !important;
+  color: dodgerblue;
+  transition: color 0.3s ease !important;
 }
 
 .music p {
@@ -770,7 +786,7 @@ nav ul li a:hover {
   gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
   padding-left: 0 !important;
-  text-align: center;
+  place-items: center;
 }
 
 .music .rss-box-music ul .rss-item {
