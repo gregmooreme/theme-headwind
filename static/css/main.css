@@ -768,7 +768,7 @@ nav ul li a:hover {
   box-shadow: none !important;
 }
 
-.music .rss-box-music li a .rss-item {
+.music .rss-box-music li a.rss-item {
   order: 2;
 }
 

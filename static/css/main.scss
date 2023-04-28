@@ -622,7 +622,7 @@ nav {
 				transition: color 0.3s ease !important;
 				box-shadow: none !important;
 			}
-			.rss-item { order: 2; }
+			&.rss-item { order: 2; }
 		}
 		img {
 			order: 1;
