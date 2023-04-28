@@ -598,14 +598,8 @@ nav {
 		.rss-item { 
 			h2, h3 { display: none; }
 
-			img {
-				//order: 1;
-				aspect-ratio: 1 / 1;
-				padding-top: 0;
-				padding-bottom: 4px;
-			}
 			a {
-				//order: 2;
+				//order: 1;
 				grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
 				padding: 2px;
 				transition: color 0.3s ease !important;
@@ -621,8 +615,11 @@ nav {
 					transition: color 0.3s ease !important;
 					box-shadow: none !important;
 				}
-				:nth-first-of-type(1) {
-					order: 2;
+				img {
+					order: 1;
+					aspect-ratio: 1 / 1;
+					padding-top: 0;
+					padding-bottom: 4px;
 				}
 			}
 			p {
