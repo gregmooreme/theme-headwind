@@ -588,53 +588,35 @@ nav {
 .music {
 	max-width: $breakpoint-desktop;
 	.rss-title { display: none; }
-	img { 
-		aspect-ratio: 1 / 1;
-		padding-top: 0;
-		padding-bottom: 4px;
-		order: 1;
-	}
-	a {
-		order: 2;
-		grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
-		padding: 2px;
-		transition: color 0.3s ease !important;
-		box-shadow: none !important;
-		text-decoration: none;
-		font-weight: 600;
-		color: $winter-night-dk;
-		@media (prefers-color-scheme: dark) {
-			color: $winter-day-dk;
+	.rss-item {
+		img {
+			order: 1;
+			aspect-ratio: 1 / 1;
+			padding-top: 0;
+			padding-bottom: 4px;
 		}
-		&:hover {
-			color: $link-hover;
+		a {
+			order: 2;
+			grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
+			padding: 2px;
 			transition: color 0.3s ease !important;
 			box-shadow: none !important;
+			text-decoration: none;
+			font-weight: 600;
+			color: $winter-night-dk;
+			@media (prefers-color-scheme: dark) {
+				color: $winter-day-dk;
+			}
+			&:hover {
+				color: $link-hover;
+				transition: color 0.3s ease !important;
+				box-shadow: none !important;
+			}
 		}
-	}
-	/*a {
-		order: 2;
-		grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
-		border-radius: 3px;
-		padding: 4px 10px;
-		transition: background 0.3s ease !important;
-		box-shadow: none !important;
-		text-decoration: none;
-		font-weight: 600;
-		color: $winter-night-dk;
-		@media (prefers-color-scheme: dark) {
-			color: $winter-day-dk;
+		p {
+			order: 3;
+			line-height: 1.2em;
 		}
-		&:hover {
-			background: $link-hover;
-			color: $winter-day-lt;
-			transition: background 0.3s ease !important;
-			box-shadow: none !important;
-		}
-	}*/
-	p {
-		order: 3;
-		line-height: 1.2em;
 	}
 	.rss-box-music ul {
 		display: grid;
