@@ -762,7 +762,7 @@ nav ul li a:hover {
   box-shadow: none !important;
 }
 
-.music .rss-box-music ul .rss-item a img {
+.music .rss-box-music ul .rss-item img {
   order: 1;
   aspect-ratio: 1 / 1;
   padding-top: 0;
