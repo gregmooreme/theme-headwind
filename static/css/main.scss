@@ -588,7 +588,22 @@ nav {
 .music {
 	max-width: $breakpoint-desktop;
 	.rss-title { display: none; }
-	.rss-item {
+	.rss-box-music ul {
+		display: grid;
+		gap: 1em;
+		grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+		padding-left: 0 !important;
+		place-items: center;
+
+		.rss-item { 
+			h2, h3 { display: none; }
+		}
+	}
+	.rss-box-music li {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: auto;
+
 		img {
 			order: 1;
 			aspect-ratio: 1 / 1;
@@ -617,22 +632,6 @@ nav {
 			order: 3;
 			line-height: 1.2em;
 		}
-	}
-	.rss-box-music ul {
-		display: grid;
-		gap: 1em;
-		grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
-		padding-left: 0 !important;
-		place-items: center;
-
-		.rss-item { 
-			h2, h3 { display: none; }
-		}
-	}
-	.rss-box-music li {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: auto;
 	}
 }
 
