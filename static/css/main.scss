@@ -627,8 +627,8 @@ nav {
 				transition: color 0.3s ease !important;
 				box-shadow: none !important;
 			}
-			:nth-of-type(2) {
-				flex-direction: column-reverse;
+			:nth-last-child(-n+1) {
+				order: 1;
 			}
 		}
 		p {
