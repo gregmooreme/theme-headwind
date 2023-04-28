@@ -605,7 +605,7 @@ nav {
 		margin-bottom: auto;
 
 		img {
-			order: 1;
+			//order: 1;
 			aspect-ratio: 1 / 1;
 			padding-top: 0;
 			padding-bottom: 4px;
@@ -627,9 +627,12 @@ nav {
 				transition: color 0.3s ease !important;
 				box-shadow: none !important;
 			}
+			:nth-of-type(2) {
+				flex-direction: column-reverse;
+			}
 		}
 		p {
-			order: 3;
+			//order: 3;
 			line-height: 1.2em;
 		}
 	}

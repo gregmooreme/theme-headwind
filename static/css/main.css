@@ -747,7 +747,6 @@ nav ul li a:hover {
 }
 
 .music .rss-box-music li img {
-  order: 1;
   aspect-ratio: 1 / 1;
   padding-top: 0;
   padding-bottom: 4px;
@@ -776,8 +775,11 @@ nav ul li a:hover {
   box-shadow: none !important;
 }
 
+.music .rss-box-music li a :nth-of-type(2) {
+  flex-direction: column-reverse;
+}
+
 .music .rss-box-music li p {
-  order: 3;
   line-height: 1.2em;
 }
 
