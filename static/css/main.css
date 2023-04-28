@@ -736,11 +736,17 @@ nav ul li a:hover {
   place-items: center;
 }
 
-.music .rss-box-music ul .rss-item h2, .music .rss-box-music ul .rss-item h3 {
+.music .rss-box-music li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.music .rss-box-music li h2, .music .rss-box-music li h3 {
   display: none;
 }
 
-.music .rss-box-music ul .rss-item a {
+.music .rss-box-music li a {
   grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
   padding: 2px;
   transition: color 0.3s ease !important;
@@ -751,33 +757,31 @@ nav ul li a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-  .music .rss-box-music ul .rss-item a {
+  .music .rss-box-music li a {
     color: #D8DEE9;
   }
 }
 
-.music .rss-box-music ul .rss-item a:hover {
+.music .rss-box-music li a:hover {
   color: dodgerblue;
   transition: color 0.3s ease !important;
   box-shadow: none !important;
 }
 
-.music .rss-box-music ul .rss-item img {
+.music .rss-box-music li a .rss-item {
+  order: 2;
+}
+
+.music .rss-box-music li img {
   order: 1;
   aspect-ratio: 1 / 1;
   padding-top: 0;
   padding-bottom: 4px;
 }
 
-.music .rss-box-music ul .rss-item p {
+.music .rss-box-music li p {
   order: 3;
   line-height: 1.2em;
-}
-
-.music .rss-box-music li {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: auto;
 }
 
 /* Search field width fix ------- */
