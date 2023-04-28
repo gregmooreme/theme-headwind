@@ -753,7 +753,6 @@ nav ul li a:hover {
 }
 
 .music .rss-box-music li a {
-  order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
   padding: 2px;
   transition: color 0.3s ease !important;
@@ -780,6 +779,7 @@ nav ul li a:hover {
 }
 
 .music .rss-box-music li p {
+  order: 3;
   line-height: 1.2em;
 }
 

@@ -611,7 +611,7 @@ nav {
 			padding-bottom: 4px;
 		}
 		a {
-			order: 2;
+			//order: 2;
 			grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
 			padding: 2px;
 			transition: color 0.3s ease !important;
@@ -632,7 +632,7 @@ nav {
 			}
 		}
 		p {
-			//order: 3;
+			order: 3;
 			line-height: 1.2em;
 		}
 	}
