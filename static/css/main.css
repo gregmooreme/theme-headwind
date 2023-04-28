@@ -768,8 +768,8 @@ nav ul li a:hover {
   box-shadow: none !important;
 }
 
-.music .rss-box-music ul .rss-item a :nth-last-of-type(1) {
-  order: 1;
+.music .rss-box-music ul .rss-item a :nth-first-of-type(1) {
+  order: 2;
 }
 
 .music .rss-box-music ul .rss-item p {

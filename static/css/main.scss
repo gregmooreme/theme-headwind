@@ -621,8 +621,8 @@ nav {
 					transition: color 0.3s ease !important;
 					box-shadow: none !important;
 				}
-				:nth-last-of-type(1) {
-					order: 1;
+				:nth-first-of-type(1) {
+					order: 2;
 				}
 			}
 			p {
