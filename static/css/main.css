@@ -774,7 +774,7 @@ nav ul li a:hover {
   box-shadow: none !important;
 }
 
-.music .rss-box-music li a :nth-last-child(-n+1) {
+.music .rss-box-music li a :nth-last-child(1) {
   order: 1;
 }
 
