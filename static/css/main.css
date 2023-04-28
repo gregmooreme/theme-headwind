@@ -753,7 +753,7 @@ nav ul li a:hover {
   padding-bottom: 4px;
 }
 
-.music .rss-box-music li a {
+.music .rss-box-music li .rss-item a {
   order: 2;
   grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
   padding: 2px;
@@ -765,12 +765,12 @@ nav ul li a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-  .music .rss-box-music li a {
+  .music .rss-box-music li .rss-item a {
     color: #D8DEE9;
   }
 }
 
-.music .rss-box-music li a:hover {
+.music .rss-box-music li .rss-item a:hover {
   color: dodgerblue;
   transition: color 0.3s ease !important;
   box-shadow: none !important;
