@@ -11,6 +11,15 @@
     <section class="e-content post-body">
         {{ .Content }}
     </section>
+      {{ if.Params.categories }}
+      <hr>
+      <span class="categories-inline">
+          <ion-icon name="pricetags-outline"></ion-icon>
+          {{ range .Params.categories }}
+          <a href="/categories/{{ . | urlize }}"> {{ . }} </a>
+          {{ end }}    
+      </span>
+      {{ end }}
     </article>
     <div class="replies">
       <h3>Replies</h3>

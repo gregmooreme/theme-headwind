@@ -52,6 +52,7 @@ blockquote {
   font-family: "Fraunces", serif;
   background-color: #E5E9F0;
   border-left: 10px solid #5E81AC;
+  border-radius: 0.5em;
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
@@ -256,11 +257,16 @@ footer #rss a:hover {
 
 .post {
   padding: 0.5em;
-  margin: 0.5em 0;
+  margin: 2em 0;
   background-color: #fff;
   border: 1px solid #ECEFF4;
   border-radius: 0.5em;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.post:nth-child(1) {
+  /* Align the first post to the top */
+  margin: 0.5em 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -453,6 +459,34 @@ footer #rss a:hover {
   transition: background 0.3s ease;
 }
 
+.categories-inline {
+  display: flex;
+  align-items: center;
+}
+
+.categories-inline a {
+  background: #ECEFF4;
+  border-radius: 3px;
+  padding: 4px 5px;
+  color: #1f2227;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .categories-inline a {
+    background-color: #2E3440;
+    color: #ECEFF4;
+  }
+}
+
+.categories-inline a:hover {
+  background: dodgerblue;
+  color: white;
+  transition: background 0.3s ease;
+}
+
 /* Archive ------- */
 .archive-wrapper {
   max-width: 760px;
@@ -521,6 +555,7 @@ footer #rss a:hover {
   background: dodgerblue;
   border-radius: 3px;
   padding: 8px 20px;
+  font-weight: 600;
   color: #ECEFF4;
   transition: background 0.3s ease;
   text-decoration: none;

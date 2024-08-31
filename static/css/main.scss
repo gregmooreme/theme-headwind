@@ -42,6 +42,7 @@ blockquote {
 	font-family: "Fraunces", serif;
     background-color: $winter-day-md;
     border-left: 10px solid $frost-ocean;
+	border-radius: 0.5em;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
 	&:before {
@@ -203,12 +204,16 @@ footer {
 }
 .post {
 	padding: 0.5em;
-	margin: 0.5em 0;
+	margin: 2em 0;
 	background-color: #fff;
 	border: 1px solid $winter-day-lt;
 	border-radius: 0.5em;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
 		0px 0px 1px rgba(0, 0, 0, 0.04);
+
+	&:nth-child(1) { /* Align the first post to the top */
+		margin: 0.5em 0;
+	}
 
 	@media (prefers-color-scheme: dark) {
 		background-color: $winter-night-md;
@@ -372,6 +377,30 @@ footer {
 	}
 }
 
+.categories-inline {
+	display: flex;
+ 	align-items: center;
+
+	a {
+		background: $winter-day-lt;
+		border-radius: 3px;
+		padding: 4px 5px;
+		color: $link;
+		transition: background 0.3s ease;
+		text-decoration: none;
+		margin-left: 0.5rem;
+		@media (prefers-color-scheme: dark) {
+			background-color: $winter-night-dk;
+			color: $winter-day-lt;
+		}
+		&:hover {
+			background: $link-hover;
+			color: white;
+			transition: background 0.3s ease;
+		}
+	}
+}
+
 /* Archive ------- */
 .archive-wrapper {
 	max-width: $breakpoint-tablet;
@@ -424,6 +453,7 @@ footer {
 		background: $link-hover;
 		border-radius: 3px;
 		padding: 8px 20px;
+		font-weight: 600;
 		color: $winter-day-lt;
 		transition: background 0.3s ease;
 		text-decoration: none;
