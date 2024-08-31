@@ -62,7 +62,7 @@ blockquote:before {
   content: "\201C";
   font-family: Georgia, serif;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 4rem;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.5em;
@@ -142,7 +142,7 @@ footer img {
 }
 
 footer p {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 600;
   padding: 0.5em;
 }
@@ -361,7 +361,7 @@ footer #rss a:hover {
 }
 
 .microblog_time {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   padding-top: 10px;
 }
 
@@ -581,7 +581,7 @@ nav a {
 nav .logo {
   color: dodgerblue;
   font-family: "Rock Salt", handwriting;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 2em;
   margin: 0;
   transition: all 0.3s ease;
@@ -623,7 +623,7 @@ nav ul li {
 nav ul li a {
   outline: none;
   color: #1f2227;
-  font-size: 1em;
+  font-size: 1rem;
   text-decoration: none;
   letter-spacing: 0.04em;
   transition: all 0.3s ease;
@@ -664,7 +664,7 @@ nav ul li a:hover {
   .nav-container ul li a {
     opacity: 0;
     color: #fff;
-    font-size: 2em;
+    font-size: 2rem;
     transform: translateY(-20px);
     transition: all 0.3s ease;
   }
