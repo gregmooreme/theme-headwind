@@ -37,13 +37,9 @@ h5,
 h6 {
 	font-family: "Fraunces", serif;
 	font-weight: 800;
-	line-height: 0.5em;
 	color: $winter-night-dk;
 	@media (prefers-color-scheme: dark) {
 		color: $winter-day-lt;
-	}
-	@media screen and (max-width: $breakpoint-mobile) {
-		line-height: 1em;
 	}
 }
 blockquote {

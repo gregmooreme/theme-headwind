@@ -38,7 +38,6 @@ h5,
 h6 {
   font-family: "Fraunces", serif;
   font-weight: 800;
-  line-height: 0.5em;
   color: #2E3440;
 }
 
@@ -50,17 +49,6 @@ h6 {
   h5,
   h6 {
     color: #ECEFF4;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 1em;
   }
 }
 
