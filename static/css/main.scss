@@ -42,6 +42,9 @@ h6 {
 	@media (prefers-color-scheme: dark) {
 		color: $winter-day-lt;
 	}
+	@media screen and (max-width: $breakpoint-mobile) {
+		line-height: 1em;
+	}
 }
 blockquote {
 	font-family: "Fraunces", serif;

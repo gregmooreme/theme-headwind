@@ -53,6 +53,17 @@ h6 {
   }
 }
 
+@media screen and (max-width: 560px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1em;
+  }
+}
+
 blockquote {
   font-family: "Fraunces", serif;
   background-color: #E5E9F0;
