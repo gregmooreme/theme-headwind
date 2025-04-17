@@ -47,7 +47,7 @@ blockquote {
     background-color: $winter-day-md;
     border-left: 10px solid $frost-ocean;
 	border-radius: 0.5em;
-    padding: 0.5em 10px;
+    padding: 0.5em;
     quotes: "\201C""\201D""\2018""\2019";
 	&:before {
 		color: $frost-water;
@@ -59,6 +59,11 @@ blockquote {
 		margin-right: 0.25em;
 		vertical-align: -0.5em;
 	}
+	@media screen and (max-width: $breakpoint-mobile) {
+		margin: 0;
+		border-left: none;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		background-color: $winter-day-dk;
 		color: $winter-night-dk;
