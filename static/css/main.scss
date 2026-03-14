@@ -387,6 +387,7 @@ footer {
 
 			a {
 				color: $link;
+				text-decoration: none;
 				&:hover {
 					color: $link-hover;
 				}
