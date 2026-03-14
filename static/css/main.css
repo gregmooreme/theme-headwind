@@ -456,6 +456,8 @@ footer #rss a:hover {
 
 .reading .book-card .book-info {
   flex: 1;
+  padding-left: 1em;
+  object-position: top;
 }
 
 .categories {
