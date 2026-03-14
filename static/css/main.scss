@@ -354,6 +354,19 @@ footer {
 }
 
 /* Column 3 ------- */
+.reading {
+	display: flex;
+	align-items: center;
+
+	.book-art {
+		max-width: 100px;
+		min-width: 100px;
+		height: 100px;
+		object-fit: cover;
+		object-position: top;
+	}
+}
+
 .categories {
     display: flex;
     flex-flow: wrap;
@@ -689,6 +702,7 @@ input#input_search.field {
 
 /* Photos Grid ------- */
 .photos-grid {
+	padding-top: 1em;
 	
 	img {
 		border-radius: 5px;
