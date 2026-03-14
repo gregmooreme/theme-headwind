@@ -355,7 +355,6 @@ footer {
 
 /* Column 3 ------- */
 .reading {
-	display: flex;
 	
 	h3 {
 		width: 100%;
@@ -371,6 +370,11 @@ footer {
 		height: 100px;
 		object-fit: cover;
 		object-position: top;
+	}
+
+	.book-card {
+		display: flex;
+		align-items: center;
 	}
 }
 

@@ -430,10 +430,6 @@ footer #rss a:hover {
 }
 
 /* Column 3 ------- */
-.reading {
-  display: flex;
-}
-
 .reading h3 {
   width: 100%;
   color: #999;
@@ -451,6 +447,11 @@ footer #rss a:hover {
   height: 100px;
   object-fit: cover;
   object-position: top;
+}
+
+.reading .book-card {
+  display: flex;
+  align-items: center;
 }
 
 .categories {
