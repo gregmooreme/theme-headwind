@@ -462,6 +462,14 @@ footer #rss a:hover {
   object-position: top;
 }
 
+.reading .book-card .book-info a {
+  color: #1f2227;
+}
+
+.reading .book-card .book-info a:hover {
+  color: dodgerblue;
+}
+
 .reading .book-card .book-info strong {
   font-weight: 600;
 }

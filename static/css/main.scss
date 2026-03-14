@@ -385,6 +385,13 @@ footer {
 			padding-left: 1em;
 			object-position: top;
 
+			a {
+				color: $link;
+				&:hover {
+					color: $link-hover;
+				}
+			}
+
 			strong {
 				font-weight: 600;
 			}
