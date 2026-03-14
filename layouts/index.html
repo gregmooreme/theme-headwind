@@ -68,7 +68,7 @@
                     <img src="{{ index $books 0 "cover_url" }}" alt="Book Art" class="book-art">
                 </a>
                 <div class="book-info">
-                    <p><strong>{{ index $books 0 "title" }}</strong><br />
+                    <p><a href="https://micro.blog/books/{{ index $books 0 "isbn" }}" target="_blank"><strong>{{ index $books 0 "title" }}</strong></a><br />
                     by {{ index $books 0 "author" }}</p>
                 </div>
             </div>
