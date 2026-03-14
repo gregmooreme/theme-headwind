@@ -441,17 +441,17 @@ footer #rss a:hover {
   }
 }
 
-.reading .book-art {
+.reading .book-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.reading .book-card .book-art {
   max-width: 100px;
   min-width: 100px;
   height: 100px;
   object-fit: cover;
   object-position: top;
-}
-
-.reading .book-card {
-  display: flex;
-  align-items: center;
 }
 
 .categories {
