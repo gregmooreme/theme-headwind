@@ -356,7 +356,14 @@ footer {
 /* Column 3 ------- */
 .reading {
 	display: flex;
-	align-items: center;
+	
+	h3 {
+		width: 100%;
+		color: #999;
+		@media (prefers-color-scheme: dark) {
+			color: $winter-day-md;
+		}
+	}
 
 	.book-art {
 		max-width: 100px;

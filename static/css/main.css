@@ -432,7 +432,17 @@ footer #rss a:hover {
 /* Column 3 ------- */
 .reading {
   display: flex;
-  align-items: center;
+}
+
+.reading h3 {
+  width: 100%;
+  color: #999;
+}
+
+@media (prefers-color-scheme: dark) {
+  .reading h3 {
+    color: #E5E9F0;
+  }
 }
 
 .reading .book-art {
