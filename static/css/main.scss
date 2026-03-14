@@ -44,12 +44,16 @@ h6 {
 }
 blockquote {
 	font-family: "Fraunces", serif;
-    background-color: $winter-day-md;
-    border-left: 10px solid $frost-ocean;
+    /*background-color: $winter-day-md;
+    border-left: 10px solid $frost-ocean;*/
+	background-color: #ffc;
+  	background-size: 1.5em 1.5em;
+	background-image: repeating-linear-gradient(0deg, #ddd, #ddd 1px, #ffc 1px, #ffc);
+
 	border-radius: 0.5em;
     padding: 0.5em;
     quotes: "\201C""\201D""\2018""\2019";
-	&:before {
+	/*&:before {
 		color: $frost-water;
 		content: "\201C";
 		font-family: Georgia, serif;
@@ -58,16 +62,16 @@ blockquote {
 		line-height: 0.1em;
 		margin-right: 0.25em;
 		vertical-align: -0.5em;
-	}
+	}*/
 	@media screen and (max-width: $breakpoint-mobile) {
 		margin: 0;
 		border-left: none;
 	}
 
 	@media (prefers-color-scheme: dark) {
-		background-color: $winter-day-dk;
+		//background-color: $winter-day-dk;
 		color: $winter-night-dk;
-		border-left: 10px solid $frost-green;
+		//border-left: 10px solid $frost-green;
 		&:before {
 			color: $frost-ice;
 		}

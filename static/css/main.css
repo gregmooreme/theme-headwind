@@ -54,22 +54,24 @@ h6 {
 
 blockquote {
   font-family: "Fraunces", serif;
-  background-color: #E5E9F0;
-  border-left: 10px solid #5E81AC;
+  /*background-color: $winter-day-md;
+    border-left: 10px solid $frost-ocean;*/
+  background-color: #ffc;
+  background-size: 1.5em 1.5em;
+  background-image: repeating-linear-gradient(0deg, #ddd, #ddd 1px, #ffc 1px, #ffc);
   border-radius: 0.5em;
   padding: 0.5em;
   quotes: "“" "”" "‘" "’";
-}
-
-blockquote:before {
-  color: #81A1C1;
-  content: "\201C";
-  font-family: Georgia, serif;
-  font-weight: bold;
-  font-size: 4rem;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.5em;
+  /*&:before {
+		color: $frost-water;
+		content: "\201C";
+		font-family: Georgia, serif;
+		font-weight: bold;
+		font-size: 4rem;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.5em;
+	}*/
 }
 
 @media screen and (max-width: 560px) {
@@ -81,9 +83,7 @@ blockquote:before {
 
 @media (prefers-color-scheme: dark) {
   blockquote {
-    background-color: #D8DEE9;
     color: #2E3440;
-    border-left: 10px solid #8FBCBB;
   }
   blockquote:before {
     color: #88C0D0;
