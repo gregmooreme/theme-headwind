@@ -384,6 +384,10 @@ footer {
 			flex: 1;
 			padding-left: 1em;
 			object-position: top;
+
+			strong {
+				font-weight: 600;
+			}
 		}
 	}
 }

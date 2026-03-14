@@ -462,6 +462,10 @@ footer #rss a:hover {
   object-position: top;
 }
 
+.reading .book-card .book-info strong {
+  font-weight: 600;
+}
+
 .categories {
   display: flex;
   flex-flow: wrap;
