@@ -365,8 +365,8 @@ footer {
 	}
 
 	.book-card {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
+		display: flex;
+    	align-items: flex-start;
 	
 		.book-art {
 			max-width: 100px;
@@ -374,6 +374,9 @@ footer {
 			height: 100px;
 			object-fit: cover;
 			object-position: top;
+		}
+		.book-info {
+			flex: 1;
 		}
 	}
 }

@@ -63,9 +63,15 @@
     <div class="col3">
         <div class="reading">
             <h3>Reading</h3>
-            <img src="{{ index $books 0 "cover_url" }}" alt="Book Art" class="book-art">
-            <h4>{{ index $books 0 "title" }}</h4>
-            <p>{{ index $books 0 "author" }}</p>
+            <div class="book-card">
+                <a href="https://micro.blog/books/{{ index $books 0 "isbn" }}" target="_blank">
+                    <img src="{{ index $books 0 "cover_url" }}" alt="Book Art" class="book-art">
+                </a>
+                <div class="book-info">
+                    <h4>{{ index $books 0 "title" }}</h4>
+                    <p>{{ index $books 0 "author" }}</p>
+                </div>
+            </div>
         </div>
        <div class="categories">
             <h3>Categories</h3>

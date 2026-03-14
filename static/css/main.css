@@ -442,8 +442,8 @@ footer #rss a:hover {
 }
 
 .reading .book-card {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  align-items: flex-start;
 }
 
 .reading .book-card .book-art {
@@ -452,6 +452,10 @@ footer #rss a:hover {
   height: 100px;
   object-fit: cover;
   object-position: top;
+}
+
+.reading .book-card .book-info {
+  flex: 1;
 }
 
 .categories {
