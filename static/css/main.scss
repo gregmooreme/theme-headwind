@@ -360,7 +360,12 @@ footer {
 /* Column 3 ------- */
 .reading {
 	@media screen and (max-width: $breakpoint-mobile) {
-			background-color: $winter-day-dk;
+			border: 2px;
+			border-style: solid none none none;
+			border-image: linear-gradient(to right, #fff, $winter-day-dk, #fff) 3;
+		}
+	@media (prefers-color-scheme: dark) {
+		border-image: linear-gradient(to right, $winter-night-lt, $winter-day-dk, $winter-night-lt) 1;
 		}
 	
 	h3 {
@@ -381,7 +386,7 @@ footer {
 			height: 100%;
 			object-fit: cover;
 			object-position: top;
-			border-radius: 5px 0 0 5px;
+			border-radius: 0 5px 5px 0;
 			box-shadow:
 			0px 0px 0px 1px rgba(0, 0, 0, 0.08),
 			0px 1px 2px -1px rgba(0, 0, 0, 0.08),
@@ -560,6 +565,7 @@ nav {
 		display: flex;
 		align-self: stretch;
 		gap: 1.5em;
+		margin-right: 4em;
 		li {
 			display: flex;
 			font-weight: 600;
