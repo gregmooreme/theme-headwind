@@ -430,6 +430,12 @@ footer #rss a:hover {
 }
 
 /* Column 3 ------- */
+@media screen and (max-width: 560px) {
+  .reading {
+    background-color: #D8DEE9;
+  }
+}
+
 .reading h3 {
   width: 100%;
   color: #999;
@@ -443,13 +449,13 @@ footer #rss a:hover {
 
 .reading .book-card {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .reading .book-card .book-art {
   max-width: 100px;
   min-width: 100px;
-  height: 100px;
+  height: 100%;
   object-fit: cover;
   object-position: top;
   border-radius: 5px 0 0 5px;
@@ -459,7 +465,6 @@ footer #rss a:hover {
 .reading .book-card .book-info {
   flex: 1;
   padding-left: 1em;
-  object-position: top;
 }
 
 .reading .book-card .book-info a {
