@@ -639,7 +639,7 @@ nav .logo {
   font-family: "Rock Salt", handwriting;
   font-size: 1.5rem;
   line-height: 2em;
-  margin: 0;
+  margin: 0 5em;
   transition: all 0.3s ease;
 }
 
@@ -661,6 +661,7 @@ nav .logo:hover {
 
 @media screen and (max-width: 560px) {
   nav .logo {
+    margin: 0;
     line-height: 0.5em;
   }
 }
@@ -726,8 +727,8 @@ nav ul li a:hover {
   }
   .nav-open {
     position: fixed;
-    right: 10px;
-    top: 10px;
+    right: 1em;
+    top: 1em;
     display: block;
     width: 48px;
     height: 48px;
