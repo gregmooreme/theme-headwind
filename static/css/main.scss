@@ -402,6 +402,9 @@ footer {
 				&:hover {
 					color: $link-hover;
 				}
+				@media (prefers-color-scheme: dark) {
+				color: $fall-yellow;
+				}
 			}
 
 			strong {

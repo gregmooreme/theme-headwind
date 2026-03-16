@@ -484,6 +484,12 @@ footer #rss a:hover {
   color: dodgerblue;
 }
 
+@media (prefers-color-scheme: dark) {
+  .reading .book-card .book-info a {
+    color: #EBCB8B;
+  }
+}
+
 .reading .book-card .book-info strong {
   font-weight: 600;
 }
